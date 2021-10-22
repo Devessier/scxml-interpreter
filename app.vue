@@ -1,6 +1,9 @@
+<script lang="ts" setup>
+import "./assets/tailwind.css";
+</script>
+
 <template>
   <div>
-    <!-- Remove this component to get started! -->
-    <NuxtWelcome />
+    <div class="bg-red-400 h-40 w-40"></div>
   </div>
 </template>
