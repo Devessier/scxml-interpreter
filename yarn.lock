@@ -603,6 +603,11 @@
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
   integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
 
+"@types/dedent@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@types/dedent/-/dedent-0.7.0.tgz#155f339ca404e6dd90b9ce46a3f78fd69ca9b050"
+  integrity sha512-EGlKlgMhnLt/cM4DbUSafFdrkeJoC9Mvnj0PUCU7tFmTjMjNRT957kXCx0wYm3JuEq4o4ZsS5vG+NlkM2DMd2A==
+
 "@types/eslint-scope@^3.7.0":
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/@types/eslint-scope/-/eslint-scope-3.7.1.tgz#8dc390a7b4f9dd9f1284629efce982e41612116e"
@@ -1099,6 +1104,11 @@
     "@webassemblyjs/ast" "1.11.1"
     "@xtuc/long" "4.2.2"
 
+"@xstate/vue@^0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@xstate/vue/-/vue-0.8.1.tgz#96a144fe72eb6bccb8be98c7192bbed1b26ed3ff"
+  integrity sha512-m4Ejd08eUHzlTD7P6aGscwpjeHRXVZQ5iVyv5RxYi5WKoFqOMeurO2dxvI8QDfTxF27NqODj30LWYsMzZZ9lsg==
+
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@xtuc/ieee754/-/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"
@@ -1113,6 +1123,11 @@ abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
+
+ace-builds@^1.4.12, ace-builds@^1.4.13:
+  version "1.4.13"
+  resolved "https://registry.yarnpkg.com/ace-builds/-/ace-builds-1.4.13.tgz#186f42d3849ebcc6a48b93088a058489897514c1"
+  integrity sha512-SOLzdaQkY6ecPKYRDDg+MY1WoGgXA34cIvYJNNoBMGGUswHmlauU2Hy0UL96vW0Fs/LgFbMUjD+6vqzWTldIYQ==
 
 acorn-class-fields@^1.0.0:
   version "1.0.0"
@@ -2017,6 +2032,11 @@ debug@^3.2.6:
   dependencies:
     ms "^2.1.1"
 
+dedent@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
+  integrity sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
+
 deep-extend@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
@@ -2185,6 +2205,11 @@ electron-to-chromium@^1.3.867:
   version "1.3.877"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.877.tgz#956870eea7c9d8cf43cc54ea40687fee4dc0c12a"
   integrity sha512-fT5mW5Giw5iyVukeHb2XvB4joBKvzHtl8Vs3QzE7APATpFMt/T7RWyUcIKSZzYkKQgpMbu+vDBTCHfQZvh8klA==
+
+emitter-component@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/emitter-component/-/emitter-component-1.1.1.tgz#065e2dbed6959bf470679edabeaf7981d1003ab6"
+  integrity sha1-Bl4tvtaVm/RwZ57avq95gdEAOrY=
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -4964,6 +4989,11 @@ requires-port@^1.0.0:
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
+
 resolve-from@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
@@ -5336,6 +5366,13 @@ std-env@^2.2.1, std-env@^2.3.1:
   integrity sha512-eOsoKTWnr6C8aWrqJJ2KAReXoa7Vn5Ywyw6uCXgA/xDhxPoaIsBa5aNJmISY04dLwXPBnDHW4diGM7Sn5K4R/g==
   dependencies:
     ci-info "^3.1.1"
+
+stream@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/stream/-/stream-0.0.2.tgz#7f5363f057f6592c5595f00bc80a27f5cec1f0ef"
+  integrity sha1-f1Nj8Ff2WSxVlfALyAon9c7B8O8=
+  dependencies:
+    emitter-component "^1.1.1"
 
 string-width@^1.0.1:
   version "1.0.2"
@@ -5908,7 +5945,16 @@ vue-style-loader@^4.1.3:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue@^3.2.20:
+vue3-ace-editor@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/vue3-ace-editor/-/vue3-ace-editor-2.2.1.tgz#dba9541a43d248937a43fe49c034c2d2a6df5e28"
+  integrity sha512-rtTjXZ0jn4AnpRbMnX3+VF0pS4Fo1w0LqexG+F4KAM5Z8QMckkOIEXUbu0pbLgyg0upwu9F+aF6wE3mH6SL1+A==
+  dependencies:
+    ace-builds "^1.4.12"
+    resize-observer-polyfill "^1.5.1"
+    vue "^3.0.0"
+
+vue@^3.0.0, vue@^3.2.20:
   version "3.2.20"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.20.tgz#940f8aa8bf3e3be78243ca582bad41fcd45ae3e6"
   integrity sha512-81JjEP4OGk9oO8+CU0h2nFPGgJBm9mNa3kdCX2k6FuRdrWrC+CNe+tOnuIeTg8EWwQuI+wwdra5Q7vSzp7p4Iw==
@@ -6122,6 +6168,18 @@ ws@^8.2.1:
   version "8.2.3"
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.2.3.tgz#63a56456db1b04367d0b721a0b80cae6d8becbba"
   integrity sha512-wBuoj1BDpC6ZQ1B7DWQBYVLphPWkm8i9Y0/3YdHjHKHiohOJ1ws+3OccDWtH+PoC9DZD5WOTrJvNbWvjS6JWaA==
+
+xml-js@^1.6.11:
+  version "1.6.11"
+  resolved "https://registry.yarnpkg.com/xml-js/-/xml-js-1.6.11.tgz#927d2f6947f7f1c19a316dd8eea3614e8b18f8e9"
+  integrity sha512-7rVi2KMfwfWFl+GpPg6m80IVMWXLRjO+PxTq7V2CDhoGak0wzYzFgUY2m4XJ47OGdXd8eLE8EmwfAmdjw7lC1g==
+  dependencies:
+    sax "^1.2.4"
+
+xstate@^4.25.0:
+  version "4.25.0"
+  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.25.0.tgz#d902ef33137532043f7a88597af8e5e1c7ad6bdf"
+  integrity sha512-qP7lc/ypOuuWME4ArOBnzaCa90TfHkjiqYDmxpiCjPy6FcXstInA2vH6qRVAHbPXRK4KQIYfIEOk1X38P+TldQ==
 
 xtend@^4.0.2:
   version "4.0.2"

@@ -6,6 +6,7 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
+    "@types/dedent": "^0.7.0",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
     "autoprefixer": "^10.3.7",
@@ -14,7 +15,17 @@
     "eslint-plugin-vue": "^7.20.0",
     "nuxt3": "latest",
     "postcss": "^8.3.11",
+    "stream": "^0.0.2",
     "tailwindcss": "^2.2.17",
     "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@xstate/vue": "^0.8.1",
+    "ace-builds": "^1.4.13",
+    "dedent": "^0.7.0",
+    "nanoid": "^3.1.30",
+    "vue3-ace-editor": "^2.2.1",
+    "xml-js": "^1.6.11",
+    "xstate": "^4.25.0"
   }
 }
