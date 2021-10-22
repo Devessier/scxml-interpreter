@@ -4,6 +4,6 @@ import "./assets/tailwind.css";
 
 <template>
   <div>
-    <div class="bg-red-400 h-40 w-40"></div>
+    <div class="w-40 h-40 bg-red-400"></div>
   </div>
 </template>
