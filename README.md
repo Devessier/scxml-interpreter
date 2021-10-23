@@ -1,35 +1,24 @@
-# scxml-2
+# scxml-interpreter
 
-This template should help get you started developing with Vue 3 in Vite.
+Interpret SCXML state machines with [XState](https://github.com/statelyai/xstate) and visualize them with [@xstate/inspect](https://github.com/statelyai/xstate/tree/main/packages/xstate-inspect).
 
-## Recommended IDE Setup
+[Open interpreter :link:](https://scxml-interpreter.netlify.app)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur).
+## How to use
 
-## Type Support for `.vue` Imports in TS
+[Go to the online interpreter](https://scxml-interpreter.netlify.app) and paste in the editor the state machine you want to interpret. You can interact with it by using the visualizer.
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates.
+## Development
 
-However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+If you want to launch the interpreter locally, follow those steps:
 
-## Customize configuration
+1. Clone the repository
+2. Install dependencies: `yarn install`
+3. Launch Vite server: `yarn dev`
+4. Visit development server at [localhost:3000](http://localhost:3000)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## How it works
 
-## Project Setup
+You write SCXML state machines with an [ace](https://ace.c9.io/) editor configured for XML language.
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+The SCXML state machine is transformed to a XState machine at launch and 300 milliseconds after you stopped modifying it. Then the machine is interpreted and the visualizer connects to it.
