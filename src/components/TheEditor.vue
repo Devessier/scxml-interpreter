@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { computed } from "vue";
 import { useActor } from "@xstate/vue";
-import { useAppInterpreter } from "~~/composables/machine";
+import { useAppInterpreter } from "@/composables/machine";
+import AppCodeEditor from "./AppCodeEditor.vue";
 
 const { appService } = useAppInterpreter();
 

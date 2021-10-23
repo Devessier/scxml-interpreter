@@ -1,6 +1,6 @@
 import { InjectionKey, provide, inject } from "vue";
 import { useInterpret } from "@xstate/vue";
-import { appMachine, AppMachineInterpret } from "~~/machines/app";
+import { appMachine, AppMachineInterpret } from "@/machines/app";
 
 const MachineContextSymbol: InjectionKey<{
   appService: AppMachineInterpret;

@@ -1,25 +1,15 @@
 {
-  "private": true,
+  "name": "scxml-interpreter",
+  "version": "0.0.0",
   "scripts": {
-    "dev": "nuxt dev",
-    "build": "nuxt build",
-    "start": "node .output/server/index.mjs"
-  },
-  "devDependencies": {
-    "@types/dedent": "^0.7.0",
-    "@typescript-eslint/eslint-plugin": "^5.1.0",
-    "@typescript-eslint/parser": "^5.1.0",
-    "autoprefixer": "^10.3.7",
-    "eslint": "^8.1.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-vue": "^7.20.0",
-    "nuxt3": "latest",
-    "postcss": "^8.3.11",
-    "stream": "^0.0.2",
-    "tailwindcss": "^2.2.17",
-    "typescript": "^4.4.4"
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preserve": "vite build",
+    "serve": "vite preview --port 5050",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "vue": "^3.2.14",
     "@xstate/inspect": "^0.5.0",
     "@xstate/vue": "^0.8.1",
     "ace-builds": "^1.4.13",
@@ -28,5 +18,20 @@
     "vue3-ace-editor": "^2.2.1",
     "xml-js": "^1.6.11",
     "xstate": "^4.25.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "typescript": "^4.4.4",
+    "vite": "^2.6.3",
+    "vue-tsc": "^0.3.0",
+    "@types/dedent": "^0.7.0",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "autoprefixer": "^10.3.7",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-vue": "^7.20.0",
+    "stream": "^0.0.2",
+    "tailwindcss": "^2.2.17"
   }
 }

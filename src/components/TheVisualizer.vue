@@ -3,7 +3,8 @@ import { ref, computed, watch, onMounted } from "vue";
 import { createMachine } from "xstate";
 import { useActor, useMachine } from "@xstate/vue";
 import { inspect, Inspector } from "@xstate/inspect";
-import { useAppInterpreter } from "~~/composables/machine";
+import { useAppInterpreter } from "@/composables/machine";
+import AppVisualizer from "./AppVisualizer.vue";
 
 const { appService } = useAppInterpreter();
 const { state } = useActor(appService);

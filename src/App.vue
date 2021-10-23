@@ -1,12 +1,13 @@
 <script lang="ts" setup>
-import "./assets/tailwind.css";
 import { useAppInterpreterProvider } from "./composables/machine";
+import TheEditor from "./components/TheEditor.vue";
+import TheVisualizer from "./components/TheVisualizer.vue";
 
 useAppInterpreterProvider();
 </script>
 
 <template>
-  <div class="grid min-h-screen grid-cols-1 grid-rows-2">
+  <div class="grid min-h-full grid-cols-1 grid-rows-2">
     <TheEditor />
 
     <TheVisualizer />
