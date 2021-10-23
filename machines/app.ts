@@ -7,11 +7,59 @@ import { nanoid } from "nanoid/non-secure";
 const appModel = createModel(
   {
     scxmlMachine: dedent`
-    <?xml version="1.0" ?>
-    <scxml datamodel="ecmascript" name="Scxml" version="1.0" xmlns="http://www.w3.org/2005/07/scxml"><datamodel><data expr="0" id="occupancy"/></datamodel><state id="test"><state id="st1"><transition event="ev1" target="st2"/></state><state id="st2"><onentry><send event="entrySt2"/></onentry><transition event="ev2" target="st1"/></state></state></scxml>
+    <?xml version="1.0"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml"
+       version="1.0"
+       datamodel="ecmascript"
+       initial="off">
+
+  <!--  trivial 5 second microwave oven example -->
+  <datamodel>
+    <data id="cook_time" expr="5"/>
+    <data id="door_closed" expr="true"/>
+    <data id="timer" expr="0"/>
+  </datamodel>
+
+  <state id="off">
+    <!-- off state -->
+    <transition event="turn.on" target="on"/>
+  </state>
+
+  <state id="on">
+    <initial>
+        <transition target="idle"/>
+    </initial>
+    <!-- on/pause state -->
+
+    <transition event="turn.off" target="off"/>
+    <transition cond="timer &gt;= cook_time" target="off"/>
+
+    <state id="idle">
+      <!-- default immediate transition if door is shut -->
+      <transition cond="door_closed" target="cooking"/>
+      <transition event="door.close" target="cooking">
+        <assign location="door_closed" expr="true"/>
+        <!-- start cooking -->
+      </transition>
+    </state>
+
+    <state id="cooking">
+      <transition event="door.open" target="idle">
+        <assign location="door_closed" expr="false"/>
+      </transition>
+
+      <!-- a 'time' event is seen once a second -->
+      <transition event="time">
+        <assign location="timer" expr="timer + 1"/>
+      </transition>
+    </state>
+
+  </state>
+
+</scxml>
     `,
 
-    machine: undefined as StateNode,
+    machine: undefined as StateNode | undefined,
     machineId: nanoid(),
   },
   {
