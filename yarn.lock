@@ -1104,6 +1104,13 @@
     "@webassemblyjs/ast" "1.11.1"
     "@xtuc/long" "4.2.2"
 
+"@xstate/inspect@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@xstate/inspect/-/inspect-0.5.0.tgz#212a874bdb2f72dc846bb1341502ca85d05cb531"
+  integrity sha512-AOCK513vmueAAM6bQCPrvlPdHaMH3X7AgvVr0pAYzFHvV2SBhPZCX9TQXRrOmIplqByRjb34puPUbYRjkmLHww==
+  dependencies:
+    fast-safe-stringify "^2.0.7"
+
 "@xstate/vue@^0.8.1":
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/@xstate/vue/-/vue-0.8.1.tgz#96a144fe72eb6bccb8be98c7192bbed1b26ed3ff"
@@ -2703,6 +2710,11 @@ fast-levenshtein@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
+
+fast-safe-stringify@^2.0.7:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-2.1.1.tgz#c406a83b6e70d9e35ce3b30a81141df30aeba884"
+  integrity sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA==
 
 fastq@^1.6.0:
   version "1.13.0"
