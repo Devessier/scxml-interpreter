@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/01148cc6-4905-4385-a2ed-6c0b95b4194a/deploy-status)](https://app.netlify.com/sites/scxml-interpreter/deploys)
+
 # scxml-interpreter
 
 Interpret SCXML state machines with [XState](https://github.com/statelyai/xstate) and visualize them with [@xstate/inspect](https://github.com/statelyai/xstate/tree/main/packages/xstate-inspect).
