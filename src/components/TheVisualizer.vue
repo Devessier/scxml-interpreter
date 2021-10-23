@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import { ref, computed, watch, onMounted } from "vue";
-import { createMachine } from "xstate";
 import { useActor, useMachine } from "@xstate/vue";
 import { inspect, Inspector } from "@xstate/inspect";
 import { useAppInterpreter } from "@/composables/machine";
 import AppVisualizer from "./AppVisualizer.vue";
+import { visualizerMachine } from "@/machines/visualizer";
 
 const { appService } = useAppInterpreter();
 const { state } = useActor(appService);
@@ -14,48 +14,20 @@ const machineId = computed(() => state.value.context.machineId);
 
 const inspector = ref<Inspector | undefined>(undefined);
 
-const visualizerMachine = createMachine(
-  {
-    initial: "init",
-
-    states: {
-      init: {
-        on: {
-          MOUNT: {
-            target: "mounted",
-          },
-        },
-      },
-
-      mounted: {
-        entry: "createInspector",
-
-        exit: "disconnectInspector",
-      },
+const { send: vizSend } = useMachine(visualizerMachine, {
+  actions: {
+    createInspector: () => {
+      inspector.value = inspect({
+        iframe: () =>
+          document.querySelector("iframe#xstate") as HTMLIFrameElement,
+      });
     },
 
-    on: {
-      CHANGE_MACHINE: {
-        target: "mounted",
-      },
+    disconnectInspector: () => {
+      inspector.value?.disconnect();
     },
   },
-  {
-    actions: {
-      createInspector: () => {
-        inspector.value = inspect({
-          iframe: () =>
-            document.querySelector("iframe#xstate") as HTMLIFrameElement,
-        });
-      },
-
-      disconnectInspector: () => {
-        inspector.value?.disconnect();
-      },
-    },
-  }
-);
-const { send: vizSend } = useMachine(visualizerMachine);
+});
 
 onMounted(() => {
   vizSend({
@@ -73,7 +45,9 @@ watch(machineId, () => {
 <template>
   <iframe id="xstate" class="w-full h-full" />
 
-  <div v-if="machine !== undefined && inspector !== undefined">
-    <AppVisualizer :key="machineId" :machine="machine" />
-  </div>
+  <AppVisualizer
+    v-if="machine !== undefined && inspector !== undefined"
+    :key="machineId"
+    :machine="machine"
+  />
 </template>
