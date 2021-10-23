@@ -6,7 +6,7 @@ useAppInterpreterProvider();
 </script>
 
 <template>
-  <div class="grid min-h-screen grid-cols-2 grid-rows-1">
+  <div class="grid min-h-screen grid-cols-1 grid-rows-2">
     <TheEditor />
 
     <TheVisualizer />
