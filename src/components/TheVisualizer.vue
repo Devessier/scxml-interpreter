@@ -20,6 +20,7 @@ const { send: vizSend } = useMachine(visualizerMachine, {
       inspector.value = inspect({
         iframe: () =>
           document.querySelector("iframe#xstate") as HTMLIFrameElement,
+        url: "https://stately.ai/viz?inspect",
       });
     },
 
