@@ -6,7 +6,7 @@ Interpret SCXML state machines with [XState](https://github.com/statelyai/xstate
 
 [Open interpreter :link:](https://scxml-interpreter.netlify.app)
 
-[Explanatory blog post :link:](https://baptiste.devessier.fr/writing/interpret-scxml-state-machines-with-xstate)
+[Explanatory blog post :link:](https://baptiste.devessier.fr/writing/interpret-scxml-state-machines-with-xstate/)
 
 ## How to use
 
