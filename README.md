@@ -6,6 +6,8 @@ Interpret SCXML state machines with [XState](https://github.com/statelyai/xstate
 
 [Open interpreter :link:](https://scxml-interpreter.netlify.app)
 
+[Explanatory blog post :link:](https://baptiste.devessier.fr/writing/interpret-scxml-state-machines-with-xstate)
+
 ## How to use
 
 [Go to the online interpreter](https://scxml-interpreter.netlify.app) and paste in the editor the state machine you want to interpret. You can interact with it by using the visualizer.
